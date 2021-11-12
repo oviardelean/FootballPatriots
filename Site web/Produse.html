@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produse - FootballPatriots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+<div class="navbar">
+    <div class="logo">
+        <img src="images/logo.jpg" width="125px">
+    </div>
+    <nav>  
+        <ul id="MenuItems">
+            <li><a href="FootballPatriots.html">Acasa</a></li>
+            <li><a href="Produse.html">Produse</a></li>
+            <li><a href="FootballPatriots.html">Despre noi</a></li>
+            <li><a href="FootballPatriots.html">Contact</a></li>
+            <li><a href="index.php">Login</a></li>
+        </ul>
+    </nav>
+    <a href="cart.html"><img src="images/cart.jpg" width="30 px" height="30 px"></a>
+    <img src="images/meniu.jpg" class="menu-icon" onclick="menutoggle()">
+</div>
+
+</div>
+
+
+    <div class="small-container">
+      
+        <div class="row row-2">
+            <h2>Toate Produsele</h2>
+           <select> <option>Sortare Default</option>
+            <option>Sortare Popularitate</option>
+            <option>Sortare Pret</option>
+            <option>Sortare Rating</option>
+            <option>Sortare Sale</option>  </select>
+        </div>
+
+        <div class="row" >
+
+            <div class="col-4">
+                <a href="DetaliiProdusTG.html"><img src="images/categoria1.jpg"></a>
+                <h4>Tricou nationala romaniei Galben</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <p>$50.00</p>
+            </div>
+            
+            <div class="col-4">
+                <a href="DetaliiProdusJA.html"><img src="images/categoria2.jpg"></a>
+                <h4>Jacheta nationala romaniei Albastru</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <p>$70.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="DetaliiProdusJG.html"><img src="images/jachetagalb.jpg"></a>
+                <h4>Jacheta nationala romaniei Galben</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <p>$70.00</p>
+            </div>
+
+            <div class="col-4">
+                <a href="DetaliiProdus.html"><img src="images/tricalb.jpg"></a>
+                <h4>Tricou nationala romaniei Albastru</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+
+                </div>
+                <p>$65.00</p>
+            </div>
+
+        
+        </div>
+
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+ 
+<!----footer----->
+
+<div class="footer">
+<div class="container">
+    <div class="row">
+        <div class="footer-col-1">
+            <h3>Descarca aplicatia noastra.</h3>
+            <p>Descarca Aplicatia pentru IOS si Android</p>
+            <div class="app-logo">
+                <img src="images/playstore.jpg">
+                <img src="images/iostore.jpg">
+            </div>
+        </div>
+        <div class="footer-col-2">
+            <img src="images/logo.jpg">
+            <p>Scopul nostru este de a crea un mediu sustenabil si accesibil tuturor persoanele care apreciaza si practica sportul.</p>
+        </div>
+        <div class="footer-col-3">
+            <h3>Link-uri utile</h3>
+            <ul>
+                <li>Cupoane</li>
+                <li>Blog</li>
+                <li>Politica de retur</li>
+                <li>Cariere</li>
+            </ul>
+        </div>
+        <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+        </ul>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright 2020 - Ovidiu Ardelean</p>
+</div>
+</div>
+
+<!-----javascript pt meniu---->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight="200px";
+        }
+        else{
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+<!---------javascript pt click produs si redirectionare pe detalii produs-->
+
+<!----<script>
+function myFunction() {
+  var x = document.getElementsByClassName("col-4");
+    if
+  onclick="window.open(this.src)"
+  }
+}
+</script> */---->
+    
+
+
+</body>
+
+</html>
